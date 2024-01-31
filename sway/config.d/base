@@ -1,0 +1,32 @@
+# set basic keys
+set $mod Mod4
+set $left h
+set $down j
+set $up k
+set $right l
+
+#default apps
+set $term foot
+set $screenshot grim ~/Images/screenshots/scrn-$(date +"%Y-%m-%d-%H-%M-%S").png
+set $screenclip slurp | grim -g - ~/Images/screenshots/scrn-$(date +"%Y-%m-%d-%H-%M-%S").png
+set $background ~/.images/
+
+#font
+font pango:pango:"IBM Plex Mono" Regular 12
+
+# Input configuration
+input * {
+    xkb_layout "us,cz"
+    xkb_options "grp:win_space_toggle"
+}
+
+input type:touchpad {
+      dwt enabled
+      tap enabled
+}
+
+# bg
+output * bg $background fill
+
+# term binding
+bindsym $mod+Return exec $term fish
