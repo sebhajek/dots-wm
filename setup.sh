@@ -14,3 +14,5 @@ cd ~/.setup-dots/fonts/out/;
 7z x ~/.setup-dots/fonts/ibm-plex.zip;
 mv ./OpenType ./ibm-plex;
 cd ~/.setup-dots;
+
+#cargo install swayr;
