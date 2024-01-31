@@ -9,7 +9,8 @@ wget https://github.com/molarmanful/eldur/releases/download/v0.0.2/eldur.otb -O 
 wget https://github.com/slavfox/Cozette/releases/download/v.1.23.2/cozette.otb -O out/bitmap/cozette.otp;
 wget https://github.com/slavfox/Cozette/releases/download/v.1.23.2/cozette_hidpi.otb -O out/bitmap/cozette-hidpi.otp;
 
-mkdir -p ~/.setup-dots/fonts/out/ibm-plex;
-cd ~/.setup-dots/fonts/out/ibm-plex;
+mkdir -p ~/.setup-dots/fonts/out;
+cd ~/.setup-dots/fonts/out/;
 7z x ~/.setup-dots/fonts/ibm-plex.zip;
+mv ./OpenType ./ibm-plex;
 cd ~/.setup-dots;
