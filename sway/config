@@ -1,2 +1,5 @@
 # exec env RUST_BACKTRACE=1 RUST_LOG=swayr=debug swayrd > /tmp/swayrd.log 2>&1
 include ~/.config/sway/config.d/*
+bar { 
+     swaybar_command waybar
+}
