@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/env fish
 
 sudo zypper in --non-interactive grim slurp;
 
