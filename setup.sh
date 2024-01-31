@@ -1,6 +1,6 @@
 #!/usr/bin/env fish
 
-sudo zypper in --non-interactive grim slurp;
+sudo zypper -n in grim slurp;
 
 mkdir -p ~/setup-dots/fonts;
 
