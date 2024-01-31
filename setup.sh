@@ -18,6 +18,11 @@ mkdir -p ~/.setup-dots/fonts/out/ibm-plex/NerdBlex;
 7z x ~/.setup-dots/fonts/nerd-blex.zip -o~/.setup-dots/fonts/out/ibm-plex/Nerd-Blex;
 cd ~/.setup-dots;
 
-cp -fru ~/.setup-dots/fonts/out/* ~/.local/share/fonts/
-fc-cache -fv
+cp -fru ~/.setup-dots/fonts/out/* ~/.local/share/fonts/;
+fc-cache -fv;
+
 #cargo install swayr;
+
+mkdir -p ~/.config/sway;
+cp -ur ~/.setup-dots/dots/wm/sway/* ~/.config/sway;
+cp -ur ~/.setup-dots/dots/wm/waybar/* ~/.config/waybar;
