@@ -8,23 +8,7 @@
     "modules-left": ["idle_inhibitor", "sway/workspaces", "sway/mode", "sway/window"],
     "modules-center": ["clock"],
     "modules-right": ["pulseaudio", "backlight", "keyboard-state", "sway/language", "battery", "tray"],
-    // Modules configuration
-    // "sway/workspaces": {
-    //     "disable-scroll": true,
-    //     "all-outputs": true,
-    //     "warp-on-scroll": false,
-    //     "format": "{name}: {icon}",
-    //     "format-icons": {
-    //         "1": "",
-    //         "2": "",
-    //         "3": "",
-    //         "4": "",
-    //         "5": "",
-    //         "urgent": "",
-    //         "focused": "",
-    //         "default": ""
-    //     }
-    // },
+
     "keyboard-state": {
         "numlock": true,
         "capslock": true,
@@ -45,13 +29,12 @@
         "spacing": 4
     },
     "clock": {
-        // "timezone": "America/New_York",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
         "format-alt": "{:%Y-%m-%d}"
     },
     "backlight": {
         // "device": "acpi_video1",
-        "format": "{percent}%",
+        "format": "{percent}%"
     },
     "battery": {
         "states": {
@@ -90,7 +73,6 @@
             "headset": "",
             "phone": "",
             "portable": "",
-            "car": "",
             "default": ["", "", ""]
         },
         "on-click": "pavucontrol"
