@@ -1,7 +1,11 @@
 #!/usr/bin/env bash
 
+echo -e "${BGREEN}IN WM AND DM${NC}"
+sudo zypper -n in -tpackage --no-recommends sway-branding-upstream sway swayidle swaylock waybar dunst; #swaybar
+sudo zypper -n in -tpackage --no-recommends greetd gtkgreet;
 sudo zypper -n in grim slurp;
 
+echo -e "${BGREEN}IN FONTS${NC}"
 mkdir -p ~/.setup-dots/fonts/out/bitmap;
 cd ~/.setup-dots/fonts;
 wget https://github.com/IBM/plex/releases/download/v6.4.0/OpenType.zip -O ibm-plex.zip;
