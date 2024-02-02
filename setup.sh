@@ -25,4 +25,5 @@ fc-cache -fv;
 
 mkdir -p ~/.config/sway;
 cp -ur ~/.setup-dots/dots/wm/sway/* ~/.config/sway;
+mkdir -p ~/.config/waybar;
 cp -ur ~/.setup-dots/dots/wm/waybar/* ~/.config/waybar;
