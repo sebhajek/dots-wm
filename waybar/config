@@ -1,10 +1,8 @@
 {
-    "layer": "top", // Waybar at top layer
-    "position": "bottom", // Waybar position (top|bottom|left|right)
-    "height": 24, // Waybar height (to be removed for auto height)
-    // "width": 1280, // Waybar width
-    "spacing": 4, // Gaps between modules (4px)
-    // Choose the order of the modules
+    "layer": "top", 
+    "position": "bottom", 
+    "height": 24, 
+    "spacing": 4, 
     "modules-left": ["idle_inhibitor", "sway/workspaces", "sway/mode", "sway/window"],
     "modules-center": ["clock"],
     "modules-right": ["pulseaudio", "backlight", "keyboard-state", "sway/language", "battery", "tray"],
@@ -33,34 +31,31 @@
         "format-alt": "{:%Y-%m-%d}"
     },
     "backlight": {
-        // "device": "acpi_video1",
         "format": "{percent}%"
     },
     "battery": {
         "states": {
-            // "good": 95,
-            "warning": 30,
-            "critical": 15
+            "good": 96,
+            "warning": 32,
+            "critical": 16
         },
         "format": "{capacity}% {icon}",
-        "format-charging": "{capacity}% ",
+        "format-charging": "{capacity}% ",
         "format-plugged": "{capacity}% ",
         "format-alt": "{time} {icon}",
-        // "format-good": "", // An empty format will hide the module
+        "format-good": "",
         "format-full": "",
         "format-icons": ["", "", "", "", ""]
     },
     "network": {
-        // "interface": "wlp2*", // (Optional) To force the use of this interface
         "format-wifi": "{essid} ({signalStrength}%) ",
-        "format-ethernet": "{ipaddr}/{cidr} ",
-        "tooltip-format": "{ifname} via {gwaddr} ",
-        "format-linked": "{ifname} (No IP) ",
+        "format-ethernet": "{ipaddr}/{cidr} ",
+        "tooltip-format": "{ifname} via {gwaddr} ",
+        "format-linked": "{ifname} (No IP) ",
         "format-disconnected": "Disconnected ⚠",
         "format-alt": "{ifname}: {ipaddr}/{cidr}"
     },
     "pulseaudio": {
-        // "scroll-step": 1, // %, can be a float
         "format": "{volume}% {icon} {format_source}",
         "format-bluetooth": "{volume}% {icon} {format_source}",
         "format-bluetooth-muted": " {icon} {format_source}",
@@ -74,7 +69,7 @@
             "phone": "",
             "portable": "",
             "default": ["", "", ""]
-        },
-        "on-click": "pavucontrol"
+        }
+        //"on-click": "pavucontrol"
     }
 }
