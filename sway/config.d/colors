@@ -25,9 +25,9 @@ set $c09 #ff6f00
 # }
 
 #                       Border  BG      Text    Ind     Child Border
-client.focused          $c00    $c03    $c04    $c08    $c08
-client.focused_inactive $c00    $c03    $c05    $c07    $c07
-client.unfocused        $c01    $c03    $c06    $c07    $c07
+client.focused          $c00    $c03    $c04    $c07    $c08
+client.focused_inactive $c00    $c03    $c05    $c00    $c07
+client.unfocused        $c01    $c03    $c06    $c00    $c07
 client.urgent           $c02    $c03    $c05    $c09    $c09
 client.background               $c03
 
