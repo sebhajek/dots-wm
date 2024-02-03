@@ -8,3 +8,5 @@ mkdir -p ~/.config/sway;
 cp -ur ~/.setup-dots/dots/wm/sway/* ~/.config/sway;
 mkdir -p ~/.config/waybar;
 cp -ur ~/.setup-dots/dots/wm/waybar/* ~/.config/waybar;
+mkdir -p ~/.config/dunst;
+cp -ur ~/.setup-dots/dots/wm/dunst/* ~/.config/dunst;

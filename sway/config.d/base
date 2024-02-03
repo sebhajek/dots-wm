@@ -30,3 +30,5 @@ output * bg $background fill
 
 # term binding
 bindsym $mod+Return exec $term fish
+
+exec_always --no-startup-id dunst -config ~/.config/dunst/dunstrc

@@ -1,0 +1,85 @@
+[global]
+font = "Cozette 12"
+
+markup = yes
+plain_text = no
+
+format = "<b>%s</b>\n%b"
+
+sort = no
+
+indicate_hidden = yes
+
+alignment = center
+
+bounce_freq = 0
+
+show_age_threshold = -1
+
+word_wrap = yes
+
+ignore_newline = no
+
+stack_duplicates = yes
+hide_duplicate_count = no
+
+geometry = "256x64-16+48"
+
+shrink = no
+
+transparency = 0
+
+idle_threshold = 48
+
+monitor = 0
+
+follow = none
+
+sticky_history = yes
+
+history_length = 24
+
+show_indicators = yes
+
+line_height = 4
+
+separator_height = 2
+
+padding = 8
+
+horizontal_padding = 8
+
+separator_color = frame
+
+startup_notification = true
+
+dmenu = rofi -dmenu -p dunst:
+
+browser = firefox -new-tab
+
+icon_position = off
+max_icon_size = 64
+
+# Paths to default icons.
+# icon_path = /usr/share/icons/Paper/16x16/mimetypes/:/usr/share/icons/Paper/48x48/status/:/usr/share/icons/Paper/16x16/devices/:/usr/share/icons/Paper/48x48/notifications/:/usr/share/icons/Paper/48x48/emblems/
+
+frame_width = 2
+frame_color = "#42BE65"
+
+[urgency_low]
+frame_color = "#37474F"
+foreground = "#F2F4F8"
+background = "#161616"
+timeout = 4
+
+[urgency_normal]
+frame_color = "#42BE65"
+foreground = "#F2F4F8"
+background = "#161616"
+timeout = 8
+
+[urgency_critical]
+frame_color = "#EE5396"
+foreground = "#F2F4F8"
+background = "#161616"
+timeout = 16
