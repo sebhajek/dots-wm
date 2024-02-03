@@ -67,11 +67,6 @@ button:hover {
     color: #f2f4f8;
 }
 
-#cpu,
-#memory,
-#disk,
-#temperature,
-
 #backlight
 {
     background-color: #161616;
@@ -87,16 +82,10 @@ button:hover {
     background-color: #161616;
     color: #f2f4f8;
 }
-#custom-media,
+
 #tray{
     background-color: #37474f;
     color: #f2f4f8;
-}
-#mode,
-#scratchpad,
-
-#idle_inhibitor{
-    font-family: 'BlexMono Nerd Font', cozette !important;
 }
 
 #mpd {
@@ -198,6 +187,7 @@ label:focus {
 }
 
 #idle_inhibitor {
+    font-family: 'BlexMono Nerd Font', cozette;
     color: #f2f4f8;
 }
 
