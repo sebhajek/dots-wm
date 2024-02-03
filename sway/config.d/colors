@@ -1,0 +1,32 @@
+set $c00 #393939
+set $c01 #161616
+set $c02 #ee5396
+set $c03 #000000
+set $c04 #f2f4f8
+set $c05 #dde1e6
+set $c06 #90a4ae
+set $c07 #37474f
+set $c08 #42be65
+set $c09 #ff6f00
+
+# bar {
+#   colors {
+#     background $c00
+#     separator  $c01
+#     statusline $c04
+
+#     #                   Border  BG      Text
+#     focused_workspace   $c05 $c0D $c00
+#     active_workspace    $c05 $c03 $c00
+#     inactive_workspace  $c03 $c01 $c05
+#     urgent_workspace    $c08 $c08 $c00
+#     binding_mode        $c00 $c0A $c00
+#   }
+# }
+
+#                       Border  BG      Text    Ind     Child Border
+client.focused          $c00    $c03    $c04    $c08    $c08
+client.focused_inactive $c00    $c03    $c05    $c07    $c07
+client.unfocused        $c01    $c03    $c06    $c07    $c07
+client.urgent           $c02    $c03    $c05    $c09    $c09
+client.background               $c03

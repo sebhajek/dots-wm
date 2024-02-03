@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-sudo zypper -n in -tpackage --no-recommends sway-branding-upstream sway swayidle swaylock waybar dunst; #swaybar
+sudo zypper -n in -tpackage --no-recommends sway-branding-upstream sway swayidle swaylock swaybg waybar dunst rofi; #swaybar
 sudo zypper -n in -tpackage --no-recommends greetd gtkgreet;
 sudo zypper -n in grim slurp;
 
