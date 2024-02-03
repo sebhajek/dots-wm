@@ -30,3 +30,9 @@ client.focused_inactive $c00    $c03    $c05    $c07    $c07
 client.unfocused        $c01    $c03    $c06    $c07    $c07
 client.urgent           $c02    $c03    $c05    $c09    $c09
 client.background               $c03
+
+gaps inner 1
+gaps outer 1
+smart_gaps on
+
+font pango: cozette:size=8 
