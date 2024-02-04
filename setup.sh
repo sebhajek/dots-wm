@@ -14,7 +14,10 @@ cp -ur ~/.setup-dots/dots/wm/dunst/* ~/.config/dunst;
 mkdir -p /etc/sway/config.d;
 
 sudo mkdir -p /etc/greetd/;
-sudo cp -ur /usr/etc/pam.d/greetd /etc/pam.d/greetd;
+cd ~/.setup-dots/dots/wm/;
+sudo cp -u greetd.service /etc/systemd/system/greetd.service
+cd ~/;
+#sudo cp -ur /usr/etc/pam.d/greetd /etc/pam.d/greetd;
 sudo useradd -M -G video greeter;
 sudo chmod -R go+r /etc/greetd/;
 sudo cp -ur ~/.setup-dots/dots/wm/greetd/* /etc/greetd/;
