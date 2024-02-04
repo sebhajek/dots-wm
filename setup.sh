@@ -2,7 +2,7 @@
 
 sudo zypper -n in -tpackage --no-recommends sway-branding-upstream sway swayidle swaylock swaybg waybar dunst rofi; #swaybar
 #sudo zypper -n in -tpackage --no-recommends greetd gtkgreet cage;
-sudo zypper -n in -tpackage --no-recommends sddm;
+sudo zypper -n in -tpackage --no-recommends sddm xorg-x11;
 sudo zypper -n in grim slurp;
 
 mkdir -p ~/.config/sway;
