@@ -11,9 +11,9 @@ cp -ur ~/.setup-dots/dots/wm/waybar/* ~/.config/waybar;
 mkdir -p ~/.config/dunst;
 cp -ur ~/.setup-dots/dots/wm/dunst/* ~/.config/dunst;
 mkdir -p /etc/sway/config.d;
-mkdir -p /etc/greetd/;
-cp -ur ~/.setup-dots/dots/wm/greetd/* /etc/greetd/;
 
+mkdir -p /etc/greetd/;
 sudo useradd -M -G video greeter;
 sudo chmod -R go+r /etc/greetd/;
 sudo systemctl enable --now greetd;
+cp -ur ~/.setup-dots/dots/wm/greetd/* /etc/greetd/;
