@@ -19,3 +19,4 @@ mkdir -p /etc/sway/config.d;
 #sudo systemctl enable greetd;
 #sudo cp -ur ~/.setup-dots/dots/wm/greetd/* /etc/greetd/;
 sudo update-alternatives --set default-displaymanager /usr/lib/X11/displaymanagers/sddm;
+sudo systemctl set-default graphical.target;
