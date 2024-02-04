@@ -14,9 +14,12 @@ cp -ur ~/.setup-dots/dots/wm/dunst/* ~/.config/dunst;
 mkdir -p /etc/sway/config.d;
 
 sudo mkdir -p /etc/greetd/;
+sudo cp -ur /usr/etc/pam.d/greetd /etc/pam.d/greetd;
 sudo useradd -M -G video greeter;
 sudo chmod -R go+r /etc/greetd/;
-sudo systemctl enable greetd;
 sudo cp -ur ~/.setup-dots/dots/wm/greetd/* /etc/greetd/;
 #sudo update-alternatives --set default-displaymanager /usr/lib/X11/displaymanagers/sddm;
 sudo systemctl set-default graphical.target;
+sudo systemctl enable greetd;
+sudo systemctl disable display-manager;
+sudo systemctl enable greetd;
