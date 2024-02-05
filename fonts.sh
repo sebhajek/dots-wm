@@ -17,4 +17,6 @@ mkdir -p ~/.setup-dots/fonts/out/ibm-plex/NerdBlex;
 cd ~/.setup-dots;
 
 cp -fru ~/.setup-dots/fonts/out/* ~/.local/share/fonts/;
+sudo cp -fru ~/.setup-dots/fonts/out/bitmap/* /usr/share/fonts/;
 fc-cache -fv;
+sudo fc-cache -f /usr/share/fonts/;
