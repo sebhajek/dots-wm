@@ -13,6 +13,7 @@ mkdir -p ~/.config/dunst;
 cp -ur ~/.setup-dots/dots/wm/dunst/* ~/.config/dunst;
 mkdir -p /etc/sway/config.d;
 
+sudo cp -ur ~/.setup-dots/dots/wm/lightdm/* /etc/lightdm/
 sudo update-alternatives --set default-displaymanager /usr/lib/X11/displaymanagers/lightdm;
 sudo systemctl set-default graphical.target;
 sudo systemctl enable display-manager;
