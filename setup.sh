@@ -2,7 +2,7 @@
 
 sudo zypper -n in -tpackage --no-recommends sway-branding-upstream sway swayidle swaylock swaybg waybar dunst rofi; #swaybar
 sudo zypper -n in xorg-x11;
-sudo zypper -n in -tpackage --no-recommends sddm;
+sudo zypper -n in -tpackage --no-recommends lightdm;
 sudo zypper -n in grim slurp;
 
 mkdir -p ~/.config/sway;
@@ -13,6 +13,6 @@ mkdir -p ~/.config/dunst;
 cp -ur ~/.setup-dots/dots/wm/dunst/* ~/.config/dunst;
 mkdir -p /etc/sway/config.d;
 
-sudo update-alternatives --set default-displaymanager /usr/lib/X11/displaymanagers/sddm;
+sudo update-alternatives --set default-displaymanager /usr/lib/X11/displaymanagers/lightdm;
 sudo systemctl set-default graphical.target;
 sudo systemctl enable display-manager;
