@@ -7,7 +7,7 @@ wget https://github.com/ryanoasis/nerd-fonts/releases/download/v3.1.1/IBMPlexMon
 wget https://github.com/molarmanful/eldur/releases/download/v0.0.2/eldur.otb -O out/bitmap/eldur.otp;
 wget https://github.com/slavfox/Cozette/releases/download/v.1.23.2/cozette.otb -O out/bitmap/cozette.otp;
 wget https://github.com/slavfox/Cozette/releases/download/v.1.23.2/cozette_hidpi.otb -O out/bitmap/cozette-hidpi.otp;
-
+wget https://github.com/slavfox/Cozette/releases/download/v.1.23.2/CozetteVector.otf -O out/bitmap/cozette-vector.otf;
 mkdir -p ~/.setup-dots/fonts/out;
 cd ~/.setup-dots/fonts/out/;
 7z x ~/.setup-dots/fonts/ibm-plex.zip;
