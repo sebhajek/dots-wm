@@ -1,6 +1,7 @@
 #set keybinds
 bindsym $mod+Print exec $screenshot
 bindsym $mod+Shift+Print exec $screenclip
+bindsym $mod+d exec $menu
 
 bindsym $mod+Shift+q kill
 bindsym $mod+Shift+c reload
