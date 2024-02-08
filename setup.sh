@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-sudo zypper -n in -tpackage --no-recommends sway-branding-upstream sway swayidle swaylock swaybg waybar dunst rofi; #swaybar
+sudo zypper -n in -tpackage --no-recommends sway-branding-upstream sway swayidle swaylock swaybg waybar dunst wofi; #swaybar
 sudo zypper -n in xorg-x11 xorg-x11-server;
 sudo zypper -n in -tpackage --no-recommends sddm sddm-branding-upstream;
 sudo zypper -n in grim slurp;
