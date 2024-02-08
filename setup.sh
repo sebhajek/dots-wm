@@ -13,6 +13,8 @@ mkdir -p ~/.config/dunst;
 cp -ur ~/.setup-dots/dots/wm/dunst/* ~/.config/dunst;
 mkdir -p ~/.config/swaylock;
 cp -ur ~/.setup-dots/dots/wm/swaylock/* ~/.config/swaylock;
+mkdir -p ~/.config/rofi;
+cp -ur ~/.setup-dots/dots/wm/rofi/* ~/.config/rofi;
 
 mkdir -p /etc/sddm.conf.d/;
 cp -ur ~/.setup-dots/dots/wm/sddm/general.conf /etc/sddm.conf.d/;
