@@ -19,10 +19,10 @@ cp -ur ~/.setup-dots/dots/wm/rofi/* ~/.config/rofi;
 mkdir -p ~/.config/wofi;
 cp -ur ~/.setup-dots/dots/wm/rofi/* ~/.config/wofi;
 
-mkdir -p /etc/sddm.conf.d/;
-cp -ur ~/.setup-dots/dots/wm/sddm/general.conf /etc/sddm.conf.d/;
-mkdir -p /usr/share/sddm/themes/;
-cp -ur ~/.setup-dots/dots/wm/sddm/carbonesque /usr/share/sddm/themes/;
+#mkdir -p /etc/sddm.conf.d/;
+#cp -ur ~/.setup-dots/dots/wm/sddm/general.conf /etc/sddm.conf.d/;
+#mkdir -p /usr/share/sddm/themes/;
+#cp -ur ~/.setup-dots/dots/wm/sddm/carbonesque /usr/share/sddm/themes/;
 
 #sudo cp -ur ~/.setup-dots/dots/wm/lightdm/* /etc/lightdm/
 #sudo update-alternatives --set default-displaymanager /usr/lib/X11/displaymanagers/sddm;
