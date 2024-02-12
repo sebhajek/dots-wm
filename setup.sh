@@ -27,4 +27,5 @@ cp -ur ~/.setup-dots/dots/wm/sddm/carbonesque /usr/share/sddm/themes/;
 #sudo cp -ur ~/.setup-dots/dots/wm/lightdm/* /etc/lightdm/
 #sudo update-alternatives --set default-displaymanager /usr/lib/X11/displaymanagers/sddm;
 #sudo systemctl set-default graphical.target;
-sudo systemctl enable display-manager;
+#sudo systemctl enable display-manager;
+sudo systemctl enable emptty;
