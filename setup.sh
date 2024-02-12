@@ -2,7 +2,8 @@
 
 sudo zypper -n in -tpackage --no-recommends sway-branding-upstream sway swayidle swaylock swaybg waybar dunst wofi; #swaybar
 sudo zypper -n in xorg-x11 xorg-x11-server;
-sudo zypper -n in -tpackage --no-recommends sddm sddm-branding-upstream;
+#sudo zypper -n in -tpackage --no-recommends sddm sddm-branding-upstream;
+sudo opi -n emptty;
 sudo zypper -n in grim slurp;
 
 mkdir -p ~/.config/sway;
@@ -24,6 +25,6 @@ mkdir -p /usr/share/sddm/themes/;
 cp -ur ~/.setup-dots/dots/wm/sddm/carbonesque /usr/share/sddm/themes/;
 
 #sudo cp -ur ~/.setup-dots/dots/wm/lightdm/* /etc/lightdm/
-sudo update-alternatives --set default-displaymanager /usr/lib/X11/displaymanagers/sddm;
-sudo systemctl set-default graphical.target;
+#sudo update-alternatives --set default-displaymanager /usr/lib/X11/displaymanagers/sddm;
+#sudo systemctl set-default graphical.target;
 sudo systemctl enable display-manager;
